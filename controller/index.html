@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>archie's screen thing</title>
+  </head>
+  <body>
+    <input type="radio" name="source" value="bruce" id="sourceBruce" checked />
+    <label for="sourceBruce">Bruce</label>
+
+    <input type="radio" name="source" value="chalk" id="sourceChalk" />
+    <label for="sourceChalk">Chalk</label>
+
+    <br />
+    <br />
+
+    Size: <input type="number" value="128" id="sizeInput" style="width: 64px" />
+
+    <br />
+    <br />
+
+    <input type="checkbox" id="borderCheckbox" />
+    <label for="borderCheckbox">Border</label>
+
+    <br />
+    <br />
+
+    <button id="updateButton">Update</button>
+    <p>The video will autoplay</p>
+
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
+
+    <p>Current Remote Video Time: <span id="remoteTimeValue">0</span></p>
+    <p>
+      Jump to time:
+      <input type="number" value="0" id="timeInput" style="width: 64px" />
+      <button id="jumpButton">Jump</button>
+    </p>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
