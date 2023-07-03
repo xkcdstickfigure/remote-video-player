@@ -11,13 +11,13 @@ const setVideo = (source, size, border) => {
 
   let circle = source === "bruce";
   let styles = {
+    width: circle ? size : "initial",
+    height: size,
     display: "block",
     borderRadius: circle ? "50%" : "0",
     borderStyle: border ? "solid" : "none",
   };
 
-  video.width = circle ? size : "inherit";
-  video.height = size;
   Object.assign(video.style, styles);
 };
 
